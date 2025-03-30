@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selamat ulang tahun, kila!</title>
+    <style>
+        body {
+            font-family: 'comic sans ms', cursive, sans-serif;
+            text-align: center;
+            background-color: #fdbcc6;
+            color: #333;
+            padding: 50px;
+        }
+        
+        .card {
+            background: rgb(255, 229, 229);
+            padding: 25px;
+            border-radius: 30px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #ff1493;
+            font-size: 28px;
+            text-transform: lowercase;
+        }
+        
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+            text-transform: lowercase;
+        }
+        
+        .cake-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 90px;
+        }
+        
+        .cake {
+            width: 250px;
+            height: 100px;
+            background: linear-gradient(to bottom, #d2691e, #8b4513);
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cake:before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: #ffcc00;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .candle {
+            width: 14px;
+            height: 50px;
+            background: #ff4500;
+            position: absolute;
+            bottom: 100px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .candle:before {
+            content: '';
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 14px;
+            background: yellow;
+            border-radius: 50%;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+        
+        .candle.out:before {
+            opacity: 0;
+        }
+        
+        .candle:nth-child(1) {
+            left: 5%;
+        }
+        
+        .candle:nth-child(2) {
+            left: 27%;
+        }
+        
+        .candle:nth-child(3) {
+            left: 51%;
+            transform: translateX(-50%);
+        }
+        
+        .candle:nth-child(4) {
+            left: 70%;
+        }
+        
+        .candle:nth-child(5) {
+            left: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>selamat ulang tahun kila!</h1>
+        hey bestie! hari ini tuh literally your special day, so let’s make it unforgettable! 🥳✨ another year older, another year wiser (but still young and fun, obviously 😜). i hope all the good vibes always surround you, and segala dreams & goals yang kamu
+        kejar bisa beneran come true this year! nggak peduli ups and downs yang bakal datang, just remember that you’re amazing and you got this! 💪🏻 keep shining, keep spreading positivity, and jangan lupa untuk always have fun in every step you take.
+        life’s too short to be stressed, so enjoy every moment, ya! btw, jangan lupa traktiran, yaaa! 😆🎁 anyway, cheers to another year of awesomeness, happiness, and more unforgettable memories bareng kita semua! 🥂🎊💖 love you tons, kila! stay glowing
+        and keep slaying! ✨💕
+
+
+
+
+
+
+        </p>
+    </div>
+    <div class="body">
+        <p>tiup lilin nya</p>
+        <p>(tap on the candle)</p>
+    </div>
+    <div class="cake-container">
+        <div class="cake">
+            <div class="candle" onclick="blowOut(this)"></div>
+            <div class="candle" onclick="blowOut(this)"></div>
+            <div class="candle" onclick="blowOut(this)"></div>
+            <div class="candle" onclick="blowOut(this)"></div>
+            <div class="candle" onclick="blowOut(this)"></div>
+        </div>
+    </div>
+
+    <script>
+        function blowOut(candle) {
+            candle.classList.toggle('out');
+        }
+    </script>
+</body>
+
+</html>
